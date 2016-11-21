@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/finalproject</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">88093022</property>
+
+		<property name="hibernate.hbm2ddl.auto">create</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<mapping class="com.neu.xunweb.pojo.Account" />
+		<mapping class="com.neu.xunweb.pojo.PatientAccount" />
+		<mapping class="com.neu.xunweb.pojo.DoctorAccount" />
+		<mapping class="com.neu.xunweb.pojo.PharmacistAccount" />
+		<mapping class="com.neu.xunweb.pojo.Organization" />
+		<mapping class="com.neu.xunweb.pojo.Drug" />
+		<mapping class="com.neu.xunweb.pojo.CDrug" />
+		<mapping class="com.neu.xunweb.pojo.Time" />
+		<mapping class="com.neu.xunweb.pojo.Appointment" />
+
+	</session-factory>
+</hibernate-configuration>

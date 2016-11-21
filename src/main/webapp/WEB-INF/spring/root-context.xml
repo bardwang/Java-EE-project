@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="accountValidator" class="com.neu.xunweb.controller.AccountValidator"></bean>
+	<bean id="organizationValidator" class="com.neu.xunweb.controller.OrganizationValidator"></bean>
+	<bean id="doctoraccountValidator" class="com.neu.xunweb.controller.DoctorAccountValidator"></bean>
+	<bean id="patientaccountValidator" class="com.neu.xunweb.controller.PatientAccountValidator"></bean>
+	<bean id="pharmacistaccountValidator" class="com.neu.xunweb.controller.PharmacistAccountValidator"></bean>
+	<bean id="accountdao" class="com.neu.xunweb.dao.AccountDAO"></bean>
+	<bean id="cdrugdao" class="com.neu.xunweb.dao.CDrugDAO"></bean>
+	<bean id="doctoraccountdao" class="com.neu.xunweb.dao.DoctorAccountDAO"></bean>
+	<bean id="drugdao" class="com.neu.xunweb.dao.DrugDAO"></bean>
+	<bean id="organizationdao" class="com.neu.xunweb.dao.OrganizationDAO"></bean>
+	<bean id="patientaccountdao" class="com.neu.xunweb.dao.PatientAccountDAO"></bean>
+	<bean id="pharmacistaccountdao" class="com.neu.xunweb.dao.PharmacistAccountDAO"></bean>
+	<bean id="timedao" class="com.neu.xunweb.dao.TimeDAO"></bean>
+</beans>
